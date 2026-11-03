@@ -154,7 +154,46 @@ Typing animation
   align-self: flex-end;
   font-weight: 900;
 }
+/* Contact */
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+#contact .contact-box {
+  background-color: #145ce3;
+  padding: 50px 80px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+#contact .contact-box .button button {
+  background-color: #145ce3;
+  color: #F9FAF8;
+  padding: 6px 12px;
+  font-size: 15px;
+  border: 2px solid white;
+  font-weight: 550;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
 
+#contact .contact-box .button button:hover {
+  transform: scale(1.05);
+}
+#contact .contact-box .message {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+#contact .contact-box .message .heading-text {
+  font-size: 24px;
+  font-weight: 900;
+}
 
 /* General rules */
 body {
