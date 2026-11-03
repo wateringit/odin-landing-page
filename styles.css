@@ -51,7 +51,7 @@ Typing animation
   color: #E5E7EB;
 }
 .hero .left .contact button {
-  background-color: #3882F6;
+  background-color: #145ce3;
   color: #F9FAF8;
   padding: 6px 12px;
   font-size: 15px;
@@ -87,13 +87,42 @@ Typing animation
     typing 1.5s steps(10, end),
     blink-caret 0.75s step-end infinite;
 }
-
+/* Information */
 #information {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 60px;
+  gap: 50px;
 }
-
+#information .heading {
+  font-size: 36px;
+  font-weight: 900;
+}
+#information .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  gap: 40px;
+}
+#information .cards .card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+#information .cards .card .text {
+  flex-wrap: wrap;
+  max-width: 200px;
+}
+#information .cards .card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  border: solid #38c0f6;
+}
 body {
   display: flex;
   flex-direction: column;
