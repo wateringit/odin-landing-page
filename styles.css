@@ -1,0 +1,128 @@
+:root {
+  background-color: #12131a;
+  color: #F9FAF8;
+  font-family: 'Roboto', Roboto, serif;
+  scroll-behavior: smooth;
+}
+/*
+Typing animation
+*/
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #38c0f6; }
+}
+
+.header,
+.hero {
+  background-color: #1e1f28;
+  display: flex;
+}
+.header {
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+}
+
+.hero {
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+/* hero section left*/
+.hero .left {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: true;
+  padding: 16px;
+  gap: 16px;
+  max-width: 450px;
+}
+.hero .left .main-text {
+  font-size: 48px;
+  font-weight: 900;
+}
+.hero .left .secondary-text { 
+  font-size: 18px;
+  color: #E5E7EB;
+}
+.hero .left .contact button {
+  background-color: #3882F6;
+  color: #F9FAF8;
+  padding: 6px 12px;
+  font-size: 15px;
+  border: none;
+  font-weight: 550;
+  border-radius: 10px;
+  text-align: center;
+}
+/* hero section right */
+.hero .right {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  padding: 16px;
+  width: 400px;
+  height: 400px;
+}
+.hero .right img {
+  border-radius: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-text {
+  font-size: 24px;
+  border-right: 0.01rem solid #38c0f6;
+  overflow: hidden;
+  animation: 
+    typing 1.5s steps(10, end),
+    blink-caret 0.75s step-end infinite;
+}
+
+#information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100vh;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: #F9FAF8;
+  transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+a:hover {
+  color: #38c0f6;
+  transform: scale(1.1);
+}
+
+nav {
+  display: flex;
+  padding: 16px;
+}
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+li {
+  list-style-type: none;
+}
+
